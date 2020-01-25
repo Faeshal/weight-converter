@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weight Converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  	<i class="fas fa-balance-scale d-inline-block align-top mr-2 ml-2 mt-1"></i>
+    Convertor App
+  </a>
+  <a class="navbar-brand" href="https://www.instagram.com/faeshal_/" target="_blank"><i class="fab fa-instagram"></i></a>
+</nav>
+<!--  -->
+
+<div class="container">
+<div class="row ">
+	<div class="col-sm-6 offset-sm-3">
+		<h4 class="text-center mt-5 text-white mb-3">WEIGHT CONVERTOR</h4>
+
+		<form>
+			<div class="form-row">
+				<div class="col col-sm-8">
+					<input id="lbsInput" type="number" class="form-control form-control-lg mr-2 mb-2" placeholder="Input Value..." autocomplete="off">
+				</div>
+				<div class="col col-4">
+					<select id="selectOption" name="selectOption" class="form-control form-control-lg" onchange="formula(this)">
+						<option selected value="default">From...</option>
+				        <option value="kg">Kg</option>
+				        <option value="pound" >Pound</option>
+				    </select>
+				</div>
+		  	</div>
+		</form>
+
+
+		<div id="output">
+
+			<div class="card mt-2 bg-info pl-2">
+				<div class="card-block">
+					<h4>Pound:</h4>
+					<div id="poundOutput"></div>
+				</div>
+			</div>
+
+			<div class="card mt-2 bg-success pl-2">
+				<div class="card-block">
+					<h4>Grams:</h4>
+					<div id="gramsOutput"></div>
+				</div>
+			</div>
+
+			<div class="card bg-warning mt-2">
+				<div class="card-block pl-2">
+					<h4>Ounces:</h4>
+					<div id="ozOutput"></div>
+				</div>
+			</div>
+
+			<div class="card mt-2 bg-danger pl-2">
+				<div class="card-block">
+					<h4>KiloGrams:</h4>
+					<div id="kgOutput"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<!-- javascript -->
+<script type="text/javascript" src="js/formula.js"></script>
+</body>
+</html>
